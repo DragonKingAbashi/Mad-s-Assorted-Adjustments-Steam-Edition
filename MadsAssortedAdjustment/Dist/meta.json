@@ -1,0 +1,24 @@
+{
+  "ID": "com.example.MadsAssortedAdjustment",
+  "AssemblyName": "MadsAssortedAdjustment.dll",
+  "Author": [
+    {
+      "Key": "English",
+      "Value": "DragonKingAbashi"
+    }
+  ],
+  "Version": "1.0",
+  "Name": [
+    {
+      "Key": "English",
+      "Value": "Mads Assorted Adjustment"
+    }
+  ],
+  "Description": [
+    {
+      "Key": "English",
+      "Value": "Steam Version of Mad234269's Assorted Adjustments (Link: https://www.nexusmods.com/phoenixpoint/mods/53)"
+    }
+  ],
+  "Dependencies": []
+}
