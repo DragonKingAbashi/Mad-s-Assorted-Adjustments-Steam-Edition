@@ -57,7 +57,7 @@ namespace MadsAssortedAdjustment.Patches
                     captureExperience = false;
 
                     float xpConversionRate = __instance.TacticalLevel?.Difficulty?.ExpConvertedToSkillpoints ?? MadsAssortedAdjustmentConfig.XPtoSPConversionRate;
-                    float xpConversionMultiplier = Settings.XPtoSPConversionMultiplier;
+                    float xpConversionMultiplier = AssortedAdjustments.Settings.XPtoSPConversionMultiplier;
 
                     foreach (TacticalActor actor in __instance.TacticalActors)
                     {
@@ -134,7 +134,7 @@ namespace MadsAssortedAdjustment.Patches
                     soldierResultElement.EarnedExperience.color = soldierResultElement.DefaultStatus.TextColor;
 
                     // Change color of indicator if adding to the faction's pool
-                    if (Settings.XPtoSPAddToFactionPool)
+                    if (AssortedAdjustments.Settings.XPtoSPAddToFactionPool)
                     {
                         soldierResultElement.EarnedExperience.text = $"<color=#fba734>SP +{skillpoints}</color>";
                     }

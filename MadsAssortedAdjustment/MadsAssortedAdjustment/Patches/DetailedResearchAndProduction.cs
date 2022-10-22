@@ -10,6 +10,8 @@ using PhoenixPoint.Geoscape.Entities;
 using Base.Core;
 using HarmonyLib;
 using static System.Net.Mime.MediaTypeNames;
+using UnityEngine.UI;
+using Text = UnityEngine.UI.Text;
 
 namespace MadsAssortedAdjustment.Patches
 {

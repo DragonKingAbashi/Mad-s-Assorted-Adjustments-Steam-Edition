@@ -464,7 +464,7 @@ namespace MadsAssortedAdjustment.Patches
             {
                 UnlockableItemDefs = new List<string>()
                 {
-                                        "IN_Assault_Helmet_BodyPartDef",
+                    "IN_Assault_Helmet_BodyPartDef",
                     "IN_Assault_Torso_BodyPartDef",
                     "IN_Assault_Legs_ItemDef",
                     "IN_Heavy_Helmet_BodyPartDef",
@@ -490,14 +490,18 @@ namespace MadsAssortedAdjustment.Patches
                 UnlockableItemDefs = new List<string>()
                 {
                     "FS_BiogasGrenade_WeaponDef",
+                    "PX_Light_Sniper_Rifle_Ready_WeaponDef",
+                    "FS_BiogasLauncher_WeaponDef",
+                    "PX_MistSpreader_WeaponDef"
 
                                     },
                 RequiredResearchDefs = new List<string>()
                 {
-                    "PX_PhoenixProject_ResearchDef",
-                    "PX_Light_Sniper_Rifle_Ready_WeaponDef",
-                    "FS_BiogasLauncher_WeaponDef",
-                    "PX_MistSpreader_WeaponDef",
+                    "PX_HelCannon_ResearchDef",
+                    "ANU_ShreddingTech_ResearchDef",
+                    "NJ_PiercerTech_ResearchDef",
+                    "NJ_AutomatedFactories_ResearchDef",
+                    "PX_ShredderGrenade_WeaponDef"
                 },
                 AppendCompleteText = "",
                 AppendBenefitsText = ""

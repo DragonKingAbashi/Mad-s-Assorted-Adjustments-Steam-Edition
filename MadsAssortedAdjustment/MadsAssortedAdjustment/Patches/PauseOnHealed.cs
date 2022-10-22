@@ -27,7 +27,7 @@ namespace MadsAssortedAdjustment.Patches
 
 
                 // Center?
-                if (MadsAssortedAdjustmentConfig)
+                if (AssortedAdjustments.Settings.CenterOnHealed)
                 {
                     return;
                 }

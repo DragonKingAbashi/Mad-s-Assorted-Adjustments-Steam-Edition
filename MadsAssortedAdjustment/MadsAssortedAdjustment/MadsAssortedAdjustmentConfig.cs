@@ -10,15 +10,12 @@ namespace MadsAssortedAdjustment
     /// Only one config can exist per mod assembly.
     /// Config is serialized on disk as json.
     /// </summary>
-    public class MadsAssortedAdjustmentConfig
+    public class MadsAssortedAdjustmentConfig : ModConfig
     {
-        internal static object Settings;
+        internal static float XPtoSPConversionRate;
 
-        public static bool AgendaTrackerAddMissionObjective { get; internal set; }
-
-        public static explicit operator MadsAssortedAdjustmentConfig(ModConfig v)
+        public MadsAssortedAdjustmentConfig()
         {
-            throw new NotImplementedException();
         }
     }
 
@@ -32,7 +29,7 @@ namespace MadsAssortedAdjustment
         [ConfigField("Will preselect the closest phoenix base to the screen's center when entering the bases menu at the bottom.", "True")]
         public bool EnableSmartBaseSelection = true;
         [ConfigField("If an aircraft is completely empty you can scrap it from the roster list.")]
-        public bool EnableScrapAircraft;
+        public bool EnableScrapAircraft = true;
 
         [ConfigField("Adds various items to the agenda tracker above the time controller.", "True")]
         public bool EnableExtendedAgendaTracker = true;

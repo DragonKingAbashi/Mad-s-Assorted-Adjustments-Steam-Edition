@@ -26,6 +26,7 @@ using Base.Defs;
 using PhoenixPoint.Geoscape.Levels.Objectives;
 using PhoenixPoint.Geoscape.Core;
 using HarmonyLib;
+using UnityEngine.EventSystems;
 
 namespace MadsAssortedAdjustment.Patches
 {

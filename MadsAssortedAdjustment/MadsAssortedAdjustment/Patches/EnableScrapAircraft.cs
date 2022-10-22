@@ -16,6 +16,7 @@ using PhoenixPoint.Geoscape.View.ViewControllers.Roster;
 using PhoenixPoint.Geoscape.View.ViewModules;
 using PhoenixPoint.Geoscape.View.ViewStates;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 namespace MadsAssortedAdjustment.Patches

@@ -17,9 +17,18 @@ namespace MadsAssortedAdjustment
 	/// </summary>
 	public class MadsAssortedAdjustmentMain : ModMain
 	{
-		/// Config is accessible at any time, if any is declared.
-		public new MadsAssortedAdjustmentConfig Config => (MadsAssortedAdjustmentConfig)base.Config;
-
+        /// Config is accessible at any time, if any is declared.
+        internal static readonly DefRepository Repo = GameUtl.GameComponent<DefRepository>();
+        internal static readonly SharedData Shared = GameUtl.GameComponent<SharedData>();
+        public static ModMain Main { get; private set; }
+        public new MadsAssortedAdjustmentConfig Config
+		{
+			get 
+			{
+				return (MadsAssortedAdjustmentConfig)base.Config;
+            }
+		}
+		
 		/// This property indicates if mod can be Safely Disabled from the game.
 		/// Safely sisabled mods can be reenabled again. Unsafely disabled mods will need game restart ot take effect.
 		/// Unsafely disabled mods usually cannot revert thier changes in OnModDisabled
@@ -28,10 +37,6 @@ namespace MadsAssortedAdjustment
 		/// <summary>
 		/// Callback for when mod is enabled. Called even on game starup.
 		/// </summary>
-		public static ModMain Main { get; private set; }
-
-		internal static readonly DefRepository Repo = GameUtl.GameComponent<DefRepository>();
-		internal static readonly SharedData Shared = GameUtl.GameComponent<SharedData>();
 
 		public new Harmony HarmonyInstance => (Harmony)base.HarmonyInstance;
 
